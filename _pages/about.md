@@ -11,7 +11,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 {% include_relative includes/intro.md %}
 
-Personal blog is currently being updated.
+Personal blog is here ().
 
 {% include_relative includes/news.md %}
 
