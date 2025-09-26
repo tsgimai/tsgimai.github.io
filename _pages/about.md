@@ -11,7 +11,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 {% include_relative includes/intro.md %}
 
-My [Blog](https://gugu11riji.github.io/Gu_blog/).
+Here is my [Blog](https://gugu11riji.github.io/Gu_blog/).
 
 {% include_relative includes/news.md %}
 
