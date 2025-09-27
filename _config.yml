@@ -4,7 +4,7 @@
 
 title:       "Biaohang Yuan (袁彪航)"
 description: "I am interested in AI interpretability and AI safety."
-repository:  "gugu11riji/BiaohangYuan.github.io"   # “owner/repo” 格式，去掉 https:// 前缀
+repository:  "github.com/MindofAiLab"   # “owner/repo” 格式，去掉 https:// 前缀
 
 google_scholar_stats_use_cdn: true
 
