@@ -1,1 +1,0 @@
-My name is Biaohang Yuan, and I am currently affiliated with Xizang University. My research interest is AI Safety and deep learning algorithms with random matrix theory. If you are interested in collaboration, please contact me at: GuloveLY@outlook.com.
