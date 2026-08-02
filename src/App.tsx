@@ -31,7 +31,7 @@ const copy = {
     scholarMetrics: [["引用", "155"], ["h 指数", "6"], ["i10 指数", "5"], ["累计 JIF*", "69.7"]],
     metricNote: "* 按截至2026年7月最新可查期刊 JIF 逐篇累计，会议论文不计入；Google Scholar 指标会动态变化。",
     aboutTitle: "个人简介",
-    about: "汪江昭，博士，华东交通大学电气与自动化工程学院讲师，电基础教研室教师。2025年获湖南大学电气工程博士学位，2026年1月入职华东交通大学。研究聚焦人工智能与电气工程交叉领域，参与多项国家级重点项目以及国家电网、南方电网科研项目。",
+    about: "汪江昭，1997年07月生，博士，华东交通大学电气与自动化工程学院讲师，电基础教研室教师。2025年获湖南大学电气工程博士学位，2026年1月入职华东交通大学。研究聚焦人工智能与电气工程交叉领域，参与多项国家级重点项目以及国家电网、南方电网科研项目。",
     focusTitle: "研究方向",
     focuses: [
       ["电碳监测与负荷辨识", "面向工业用户的碳排放实时估计、多状态负荷识别与非侵入式监测。"],
@@ -74,7 +74,7 @@ const copy = {
     scholarMetrics: [["Citations", "155"], ["h-index", "6"], ["i10-index", "5"], ["Cumulative JIF*", "69.7"]],
     metricNote: "* Per-paper sum using the latest journal JIFs available in July 2026; conference papers are excluded. Google Scholar metrics change over time.",
     aboutTitle: "About",
-    about: "Jiangzhao Wang is a Lecturer in the School of Electrical and Automation Engineering at East China Jiaotong University. He received his Ph.D. in Electrical Engineering from Hunan University in 2025 and joined East China Jiaotong University in January 2026. His work bridges artificial intelligence and electrical engineering, with experience in national research programs and industry-sponsored projects with State Grid and China Southern Power Grid.",
+    about: "Jiangzhao Wang, born in July 1997, is a Lecturer in the School of Electrical and Automation Engineering at East China Jiaotong University. He received his Ph.D. in Electrical Engineering from Hunan University in 2025 and joined East China Jiaotong University in January 2026. His work bridges artificial intelligence and electrical engineering, with experience in national research programs and industry-sponsored projects with State Grid and China Southern Power Grid.",
     focusTitle: "Research Interests",
     focuses: [
       ["Electricity-Carbon Monitoring & Load Identification", "Real-time carbon emission estimation, multistate load identification, and non-intrusive monitoring for industrial users."],
