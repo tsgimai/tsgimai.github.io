@@ -63,7 +63,7 @@ const copy = {
     teachingTitle: "教学",
     teaching: "承担《电工基础》《电子技术基础》等本科课程教学。欢迎对电碳监测、智能测量、异常检测与储能状态估计感兴趣的同学交流。",
     serviceTitle: "学术服务",
-    service: "ORCID 公开记录显示已完成6次经验证的同行评审，涉及 Measurement、Energy and Buildings、Electric Power Systems Research 与 Energy；同时担任 IEEE Internet of Things Journal、IEEE Transactions on Instrumentation and Measurement、Scientific Reports、Information、Retrieval Journal 等期刊审稿人。",
+    service: "担任 IEEE Internet of Things Journal、IEEE Transactions on Instrumentation and Measurement、Scientific Reports、Information、Retrieval Journal 等期刊审稿人；ORCID 公开记录已核验同行评审 6 次，涉及 Measurement、Energy and Buildings、Electric Power Systems Research 与 Energy。",
     footer: "汪江昭 · 华东交通大学",
   },
   en: {
@@ -106,7 +106,7 @@ const copy = {
     teachingTitle: "Teaching",
     teaching: "Undergraduate teaching includes Fundamentals of Electrical Engineering and Fundamentals of Electronic Technology. Students interested in electricity-carbon monitoring, intelligent measurement, anomaly detection, and battery state estimation are welcome to get in touch.",
     serviceTitle: "Academic Service",
-    service: "The public ORCID record verifies 6 completed peer reviews for Measurement, Energy and Buildings, Electric Power Systems Research, and Energy. Additional reviewing service includes IEEE Internet of Things Journal, IEEE Transactions on Instrumentation and Measurement, Scientific Reports, Information, and Retrieval Journal.",
+    service: "Reviewer for IEEE Internet of Things Journal, IEEE Transactions on Instrumentation and Measurement, Scientific Reports, Information, and Retrieval Journal. ORCID publicly verifies six completed reviews for Measurement, Energy and Buildings, Electric Power Systems Research, and Energy.",
     footer: "Jiangzhao Wang · East China Jiaotong University",
   },
 };
