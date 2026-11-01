@@ -63,7 +63,7 @@ const copy = {
     teachingTitle: "教学",
     teaching: "承担《电工基础》《电子技术基础》等本科课程教学。欢迎对电碳监测、智能测量、异常检测与储能状态估计感兴趣的同学交流。",
     serviceTitle: "学术服务",
-    service: "担任 IEEE Internet of Things Journal、IEEE Transactions on Instrumentation and Measurement、Energy、Measurement、Energy and Buildings、Electric Power Systems Research、Scientific Reports、Information、Retrieval Journal 等期刊审稿人，累计审稿 10 余次。",
+    service: "担任 IEEE Internet of Things Journal、IEEE Transactions on Instrumentation and Measurement、Energy、Measurement、Energy and Buildings、Electric Power Systems Research、Scientific Reports、Information、Retrieval Journal 等期刊审稿人，累计审稿约 10 次。",
     footer: "汪江昭 · 华东交通大学",
   },
   en: {
@@ -106,7 +106,7 @@ const copy = {
     teachingTitle: "Teaching",
     teaching: "Undergraduate teaching includes Fundamentals of Electrical Engineering and Fundamentals of Electronic Technology. Students interested in electricity-carbon monitoring, intelligent measurement, anomaly detection, and battery state estimation are welcome to get in touch.",
     serviceTitle: "Academic Service",
-    service: "Reviewer for IEEE Internet of Things Journal, IEEE Transactions on Instrumentation and Measurement, Energy, Measurement, Energy and Buildings, Electric Power Systems Research, Scientific Reports, Information, and Retrieval Journal, with 10+ completed reviews.",
+    service: "Reviewer for IEEE Internet of Things Journal, IEEE Transactions on Instrumentation and Measurement, Energy, Measurement, Energy and Buildings, Electric Power Systems Research, Scientific Reports, Information, and Retrieval Journal, with approximately 10 completed reviews.",
     footer: "Jiangzhao Wang · East China Jiaotong University",
   },
 };
