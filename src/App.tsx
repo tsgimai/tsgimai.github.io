@@ -41,7 +41,7 @@ const copy = {
     ],
     figureTitle: "电碳监测研究图示",
     figures: [
-      ["工业用户电碳监测总体框架", "从智能电表获取负荷数据，经设备状态辨识后实现用户碳排放实时估计。"],
+      ["工业用户用电碳排放监测示意图", "工业负荷经总表采集和设备状态辨识，结合电网排放因子估计用电相关碳排放。"],
       ["面向多负荷辨识的碳排放估计模型", "融合卷积、双向时序特征与注意力机制，同时完成多设备识别与碳排放估计。"],
     ],
     projectTitle: "科研项目",
@@ -104,7 +104,7 @@ const copy = {
     ],
     figureTitle: "Electricity-Carbon Monitoring in Focus",
     figures: [
-      ["Industrial Electricity-Carbon Monitoring Framework", "Smart-meter load data are translated into device states and real-time user-side carbon emission estimates."],
+      ["Industrial Electricity-Carbon Monitoring Illustration", "Aggregate meter data support load-state identification and electricity-related carbon emission estimation with a grid emission factor."],
       ["Multi-Load Identification for Carbon Estimation", "Convolutional, bidirectional temporal, and attention features jointly identify multiple devices and estimate their carbon emissions."],
     ],
     projectTitle: "Research Projects",
@@ -189,7 +189,7 @@ export default function Home() {
 
       <section className="section about" id="about"><div className="section-label">01</div><div><h2>{t.aboutTitle}</h2><p className="body-large">{t.about}</p></div></section>
 
-      <section className="section" id="research"><div className="section-label">02</div><div><h2>{t.focusTitle}</h2><div className="research-figures"><h3>{t.figureTitle}</h3><div className="figure-grid"><figure><img src="/research-carbon-overview.webp" alt={t.figures[0][0]} /><figcaption><strong>{t.figures[0][0]}</strong><span>{t.figures[0][1]}</span><a href="https://doi.org/10.1016/j.jclepro.2024.144226" target="_blank" rel="noreferrer">Journal of Cleaner Production, 2024 ↗</a></figcaption></figure><figure><img src="/research-carbon-multiload.webp" alt={t.figures[1][0]} /><figcaption><strong>{t.figures[1][0]}</strong><span>{t.figures[1][1]}</span><a href="https://doi.org/10.1016/j.jclepro.2025.146056" target="_blank" rel="noreferrer">Journal of Cleaner Production, 2025 ↗</a></figcaption></figure></div></div><div className="focus-grid">{t.focuses.map((f, i) => <article className="focus-card" key={f[0]}><span>0{i + 1}</span><h3>{f[0]}</h3><p>{f[1]}</p></article>)}</div></div></section>
+      <section className="section" id="research"><div className="section-label">02</div><div><h2>{t.focusTitle}</h2><div className="research-figures"><h3>{t.figureTitle}</h3><div className="figure-grid"><figure><img src="/industrial-monitoring-illustration.png" alt={t.figures[0][0]} /><figcaption><strong>{t.figures[0][0]}</strong><span>{t.figures[0][1]}</span><a href="https://doi.org/10.1016/j.jclepro.2024.144226" target="_blank" rel="noreferrer">{lang === "zh" ? "相关论文" : "Related paper"} · Journal of Cleaner Production, 2024 ↗</a></figcaption></figure><figure><img src="/research-carbon-multiload.webp" alt={t.figures[1][0]} /><figcaption><strong>{t.figures[1][0]}</strong><span>{t.figures[1][1]}</span><a href="https://doi.org/10.1016/j.jclepro.2025.146056" target="_blank" rel="noreferrer">Journal of Cleaner Production, 2025 ↗</a></figcaption></figure></div></div><div className="focus-grid">{t.focuses.map((f, i) => <article className="focus-card" key={f[0]}><span>0{i + 1}</span><h3>{f[0]}</h3><p>{f[1]}</p></article>)}</div></div></section>
 
       <section className="section" id="projects"><div className="section-label">03</div><div><h2>{t.projectTitle}</h2><ProjectGroup title={t.ledProjectsTitle} projects={t.ledProjects} /><ProjectGroup title={t.participatedProjectsTitle} projects={t.participatedProjects} /></div></section>
 
