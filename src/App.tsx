@@ -48,7 +48,7 @@ const copy = {
     ledProjectsTitle: "主持项目",
     participatedProjectsTitle: "参与项目",
     ledProjects: [
-      ["工业负荷状态识别与不确定性研究", "职业早期青年科技人才培养"],
+      ["工业负荷状态识别与不确定性研究", "江西省职业早期青年科技人才培养项目"],
       ["电力装备碳足迹基础信息研究", "横向 · 技术服务"],
     ],
     participatedProjects: [
@@ -106,7 +106,7 @@ const copy = {
     ledProjectsTitle: "Projects Led",
     participatedProjectsTitle: "Projects Participated In",
     ledProjects: [
-      ["Industrial Load State Identification and Uncertainty Research", "Early-Career Young Researchers Development Program"],
+      ["Industrial Load State Identification and Uncertainty Research", "Jiangxi Province Early-Career Young Science and Technology Talent Development Project"],
       ["Power Equipment Carbon Footprint Information Research", "Industry-commissioned · Technical Services"],
     ],
     participatedProjects: [
