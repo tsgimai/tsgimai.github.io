@@ -24,7 +24,7 @@ const publications = [
 
 const copy = {
   zh: {
-    nav: ["简介", "研究", "论文", "专利", "经历", "教学", "服务"],
+    nav: ["简介", "研究", "项目", "论文", "专利", "经历", "教学", "服务"],
     role: "博士 · 讲师",
     affiliation: "华东交通大学 · 电气与自动化工程学院",
     intro: "从事人工智能与电气工程交叉研究，关注电碳监测、智能测量与新型电力系统中的数据驱动方法。",
@@ -43,6 +43,21 @@ const copy = {
     figures: [
       ["工业用户电碳监测总体框架", "从智能电表获取负荷数据，经设备状态辨识后实现用户碳排放实时估计。"],
       ["面向多负荷辨识的碳排放估计模型", "融合卷积、双向时序特征与注意力机制，同时完成多设备识别与碳排放估计。"],
+    ],
+    projectTitle: "科研项目",
+    ledProjectsTitle: "主持项目",
+    participatedProjectsTitle: "参与项目",
+    ledProjects: [
+      ["工业负荷状态辨识与不确定性表征", "职业早期青年科技人才培养"],
+      ["电力装备碳足迹溯源基础信息调研", "横向 · 技术服务"],
+    ],
+    participatedProjects: [
+      ["多元用户电碳监测与终端用能电气化", "横向 · 南方电网企业委托"],
+      ["用户侧电碳模型与碳排放监测", "横向 · 国家电网企业委托"],
+      ["选冶过程在线检测系统智能运维与校正", "纵向 · 国家重点研发计划相关"],
+      ["异常用电诊断与窃电行为智能研判及复现", "横向 · 南方电网企业委托"],
+      ["大容量储能电站等值建模与参数辨识", "横向 · 国家电网企业委托"],
+      ["计量箱故障预警与窃电远程定位", "横向 · 国家电网企业委托"],
     ],
     pubTitle: "论文",
     pubHint: "共发表论文16篇，其中第一作者或通讯作者论文7篇；信息依据 ORCID、IEEE 及论文原文整理",
@@ -67,7 +82,7 @@ const copy = {
     footer: "汪江昭 · 华东交通大学",
   },
   en: {
-    nav: ["About", "Research", "Publications", "Patents", "Experience", "Teaching", "Service"],
+    nav: ["About", "Research", "Projects", "Publications", "Patents", "Experience", "Teaching", "Service"],
     role: "Ph.D. · Lecturer",
     affiliation: "School of Electrical and Automation Engineering · East China Jiaotong University",
     intro: "Working at the intersection of artificial intelligence and electrical engineering, with a focus on electricity-carbon monitoring, intelligent measurement, and data-driven methods for modern power systems.",
@@ -86,6 +101,21 @@ const copy = {
     figures: [
       ["Industrial Electricity-Carbon Monitoring Framework", "Smart-meter load data are translated into device states and real-time user-side carbon emission estimates."],
       ["Multi-Load Identification for Carbon Estimation", "Convolutional, bidirectional temporal, and attention features jointly identify multiple devices and estimate their carbon emissions."],
+    ],
+    projectTitle: "Research Projects",
+    ledProjectsTitle: "Projects Led",
+    participatedProjectsTitle: "Projects Participated In",
+    ledProjects: [
+      ["Industrial Load State Identification and Uncertainty Characterization", "Early-Career Young Researchers Development Program"],
+      ["Background Information Survey for Power Equipment Carbon Footprint Traceability", "Industry-commissioned · Technical Services"],
+    ],
+    participatedProjects: [
+      ["Electricity-Carbon Monitoring for Diverse Users and End-Use Electrification", "Industry-commissioned · China Southern Power Grid"],
+      ["User-Side Electricity-Carbon Modeling and Carbon Emission Monitoring", "Industry-commissioned · State Grid"],
+      ["Intelligent Operation, Maintenance and Calibration of Online Inspection Systems for Mineral Processing and Metallurgy", "Government-funded · National Key R&D Program-related"],
+      ["Abnormal Electricity Use Diagnosis and Intelligent Analysis and Reconstruction of Electricity Theft", "Industry-commissioned · China Southern Power Grid"],
+      ["Equivalent Modeling and Parameter Identification for Large-Scale Energy Storage Stations", "Industry-commissioned · State Grid"],
+      ["Metering Box Fault Warning and Remote Localization of Electricity Theft", "Industry-commissioned · State Grid"],
     ],
     pubTitle: "Publications",
     pubHint: "16 publications, including 7 first- or corresponding-author papers; curated from ORCID, IEEE, and the original papers",
@@ -122,7 +152,7 @@ export default function Home() {
       <header className="site-header">
         <a className="brand" href="#top" aria-label={lang === "zh" ? "返回首页" : "Back to top"}>WJZ<span>.</span></a>
         <nav aria-label={lang === "zh" ? "主导航" : "Main navigation"}>
-          {t.nav.map((item, i) => <a key={item} href={`#${["about", "research", "publications", "patents", "experience", "teaching", "service"][i]}`}>{item}</a>)}
+          {t.nav.map((item, i) => <a key={item} href={`#${["about", "research", "projects", "publications", "patents", "experience", "teaching", "service"][i]}`}>{item}</a>)}
         </nav>
         <button className="language" onClick={() => setLang(lang === "zh" ? "en" : "zh")} aria-label={lang === "zh" ? "Switch to English" : "切换到中文"}>{lang === "zh" ? "EN" : "中"}</button>
       </header>
@@ -151,17 +181,23 @@ export default function Home() {
 
       <section className="section" id="research"><div className="section-label">02</div><div><h2>{t.focusTitle}</h2><div className="research-figures"><h3>{t.figureTitle}</h3><div className="figure-grid"><figure><img src="/research-carbon-overview.webp" alt={t.figures[0][0]} /><figcaption><strong>{t.figures[0][0]}</strong><span>{t.figures[0][1]}</span><a href="https://doi.org/10.1016/j.jclepro.2024.144226" target="_blank" rel="noreferrer">Journal of Cleaner Production, 2024 ↗</a></figcaption></figure><figure><img src="/research-carbon-multiload.webp" alt={t.figures[1][0]} /><figcaption><strong>{t.figures[1][0]}</strong><span>{t.figures[1][1]}</span><a href="https://doi.org/10.1016/j.jclepro.2025.146056" target="_blank" rel="noreferrer">Journal of Cleaner Production, 2025 ↗</a></figcaption></figure></div></div><div className="focus-grid">{t.focuses.map((f, i) => <article className="focus-card" key={f[0]}><span>0{i + 1}</span><h3>{f[0]}</h3><p>{f[1]}</p></article>)}</div></div></section>
 
-      <section className="section" id="publications"><div className="section-label">03</div><div><div className="section-heading"><div><h2>{t.pubTitle}</h2><p>{t.pubHint}</p></div><a href="https://orcid.org/0000-0001-9785-7649" target="_blank" rel="noreferrer">ORCID ↗</a></div><PublicationGroup title={t.primaryPubs} publications={primaryPublications} lang={lang} /><PublicationGroup title={t.otherPubs} publications={otherPublications} lang={lang} /></div></section>
+      <section className="section" id="projects"><div className="section-label">03</div><div><h2>{t.projectTitle}</h2><ProjectGroup title={t.ledProjectsTitle} projects={t.ledProjects} /><ProjectGroup title={t.participatedProjectsTitle} projects={t.participatedProjects} /></div></section>
 
-      <section className="section" id="patents"><div className="section-label">04</div><div><div className="section-heading"><div><h2>{t.patentTitle}</h2><p>{t.patentHint}</p></div></div><div className="patent-list">{t.patents.map((p) => <article className="patent" key={p[1]}><div className="year">{p[0]}</div><div><h3>{p[1]}</h3><p>{p[2]}</p></div><a href={p[3]} target="_blank" rel="noreferrer" aria-label={`${lang === "zh" ? "检索专利" : "Open patent"}: ${p[1]}`}>{lang === "zh" ? "专利检索" : "Patent"} ↗</a></article>)}</div></div></section>
+      <section className="section" id="publications"><div className="section-label">04</div><div><div className="section-heading"><div><h2>{t.pubTitle}</h2><p>{t.pubHint}</p></div><a href="https://orcid.org/0000-0001-9785-7649" target="_blank" rel="noreferrer">ORCID ↗</a></div><PublicationGroup title={t.primaryPubs} publications={primaryPublications} lang={lang} /><PublicationGroup title={t.otherPubs} publications={otherPublications} lang={lang} /></div></section>
 
-      <section className="section" id="experience"><div className="section-label">05</div><div><h2>{t.experienceTitle}</h2><div className="timeline">{t.experience.map((e) => <article key={e[0]}><div className="date">{e[0]}</div><div><h3>{e[1]}</h3><p>{e[2]}</p></div></article>)}</div></div></section>
+      <section className="section" id="patents"><div className="section-label">05</div><div><div className="section-heading"><div><h2>{t.patentTitle}</h2><p>{t.patentHint}</p></div></div><div className="patent-list">{t.patents.map((p) => <article className="patent" key={p[1]}><div className="year">{p[0]}</div><div><h3>{p[1]}</h3><p>{p[2]}</p></div><a href={p[3]} target="_blank" rel="noreferrer" aria-label={`${lang === "zh" ? "检索专利" : "Open patent"}: ${p[1]}`}>{lang === "zh" ? "专利检索" : "Patent"} ↗</a></article>)}</div></div></section>
 
-      <section className="split-section"><article id="teaching"><div className="section-label">06</div><h2>{t.teachingTitle}</h2><p>{t.teaching}</p></article><article id="service"><div className="section-label">07</div><h2>{t.serviceTitle}</h2><p>{t.service}</p></article></section>
+      <section className="section" id="experience"><div className="section-label">06</div><div><h2>{t.experienceTitle}</h2><div className="timeline">{t.experience.map((e) => <article key={e[0]}><div className="date">{e[0]}</div><div><h3>{e[1]}</h3><p>{e[2]}</p></div></article>)}</div></div></section>
+
+      <section className="split-section"><article id="teaching"><div className="section-label">07</div><h2>{t.teachingTitle}</h2><p>{t.teaching}</p></article><article id="service"><div className="section-label">08</div><h2>{t.serviceTitle}</h2><p>{t.service}</p></article></section>
 
       <footer><p>{t.footer}</p><p>ORCID 0000-0001-9785-7649</p></footer>
     </main>
   );
+}
+
+function ProjectGroup({ title, projects }: { title: string; projects: string[][] }) {
+  return <div className="project-group"><h3>{title}</h3><div className="project-list">{projects.map(([name, category]) => <article className="project" key={name}><h4>{name}</h4><p>{category}</p></article>)}</div></div>;
 }
 
 function PublicationGroup({ title, publications: items, lang }: { title: string; publications: typeof publications; lang: Lang }) {
