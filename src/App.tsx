@@ -79,6 +79,11 @@ const copy = {
     teaching: "承担《电工基础》《电子技术基础》等本科课程教学。欢迎对电碳监测、智能测量、异常检测与储能状态估计感兴趣的同学交流。",
     serviceTitle: "学术服务",
     service: "担任 IEEE Internet of Things Journal、IEEE Transactions on Instrumentation and Measurement、Energy、Measurement、Energy and Buildings、Electric Power Systems Research、Scientific Reports、Information、Retrieval Journal 等期刊审稿人，累计审稿约 10 次。",
+    contactTitle: "学术交流与留言",
+    contactIntro: "欢迎围绕电碳监测、智能测量和能源管理等研究方向交流。",
+    contactEmail: "私人咨询与合作，请通过邮箱联系：",
+    discussionPending: "公开留言区正在准备中。",
+    discussionNote: "公开留言请勿包含个人隐私或尚未公开的研究资料。",
     footer: "汪江昭 · 华东交通大学",
   },
   en: {
@@ -137,6 +142,11 @@ const copy = {
     teaching: "Undergraduate teaching includes Fundamentals of Electrical Engineering and Fundamentals of Electronic Technology. Students interested in electricity-carbon monitoring, intelligent measurement, anomaly detection, and battery state estimation are welcome to get in touch.",
     serviceTitle: "Academic Service",
     service: "Reviewer for IEEE Internet of Things Journal, IEEE Transactions on Instrumentation and Measurement, Energy, Measurement, Energy and Buildings, Electric Power Systems Research, Scientific Reports, Information, and Retrieval Journal, with approximately 10 completed reviews.",
+    contactTitle: "Academic Exchange & Discussion",
+    contactIntro: "Discussion on electricity-carbon monitoring, intelligent measurement, and energy management is welcome.",
+    contactEmail: "For private enquiries and collaboration, please email:",
+    discussionPending: "The public discussion area is being prepared.",
+    discussionNote: "Please do not include personal information or unpublished research in public comments.",
     footer: "Jiangzhao Wang · East China Jiaotong University",
   },
 };
@@ -190,6 +200,8 @@ export default function Home() {
       <section className="section" id="experience"><div className="section-label">06</div><div><h2>{t.experienceTitle}</h2><div className="timeline">{t.experience.map((e) => <article key={e[0]}><div className="date">{e[0]}</div><div><h3>{e[1]}</h3><p>{e[2]}</p></div></article>)}</div></div></section>
 
       <section className="split-section"><article id="teaching"><div className="section-label">07</div><h2>{t.teachingTitle}</h2><p>{t.teaching}</p></article><article id="service"><div className="section-label">08</div><h2>{t.serviceTitle}</h2><p>{t.service}</p></article></section>
+
+      <section className="section" id="discussion"><div className="section-label">09</div><div><h2>{t.contactTitle}</h2><p className="contact-intro">{t.contactIntro}</p><p className="contact-email">{t.contactEmail} <a href="mailto:wjzhao3436@ecjtu.edu.cn">wjzhao3436@ecjtu.edu.cn</a></p><div className="discussion-pending"><strong>{t.discussionPending}</strong><p>{t.discussionNote}</p></div></div></section>
 
       <footer><p>{t.footer}</p><p>ORCID 0000-0001-9785-7649</p></footer>
     </main>

@@ -94,6 +94,11 @@ h2 { font:500 clamp(34px,4vw,54px)/1.12 Georgia,"Noto Serif SC",serif; letter-sp
 .split-section article:last-child { background:#e6ece9; }
 .split-section h2 { margin:28px 0; }
 .split-section p { max-width:580px; font-size:17px; }
+.contact-intro,.contact-email { max-width:760px; color:var(--muted); line-height:1.8; }
+.contact-email a { color:var(--accent); font-weight:700; overflow-wrap:anywhere; }
+.discussion-pending { margin-top:32px; padding:22px 24px; border-left:3px solid var(--accent); background:rgba(255,255,255,.56); }
+.discussion-pending strong { font-size:15px; }
+.discussion-pending p { margin:8px 0 0; color:var(--muted); font-size:13px; line-height:1.6; }
 footer { display:flex; justify-content:space-between; padding:30px max(5vw,28px); background:#111a25; color:#aeb8c0; font-size:12px; }
 footer p { margin:0; }
 @media (max-width:900px) { nav { display:none; } .site-header{grid-template-columns:1fr 1fr}.hero{grid-template-columns:1fr;padding-top:60px}.portrait-wrap{max-width:280px;justify-self:start}.figure-grid,.focus-grid{grid-template-columns:1fr}.section{grid-template-columns:1fr}.section-label{margin-bottom:12px}.split-section{grid-template-columns:1fr}.publication,.patent{grid-template-columns:52px 1fr}.publication>a,.patent>a{grid-column:2}.timeline article{grid-template-columns:1fr;gap:8px} }
